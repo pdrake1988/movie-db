@@ -1,0 +1,14 @@
+//
+//  Development.xcconfig
+//  MovieDb
+//
+//  Created by Paul Drake on 11/25/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+ACCESS_TOKEN = ACCESS_TOKEN
+BASE_URL = BASE_URL
+
+ENVIRONMENT = Development

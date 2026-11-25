@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BASE_URL</key>
+	<string>https://f4f95666-36aa-4e63-a607-06535f0bd4cf.mock.pstmn.io</string>
+	<key>ACCESS_TOKEN</key>
+	<string>eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMmU0ZjAwNDQ1MGMzYjJkMDlkNjFjMGZiNTEyMGQwNiIsIm5iZiI6MTU5OTQxOTU5NC4xODgsInN1YiI6IjVmNTUzNGNhNTk0Yzk0MDAzNGU0MDRjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SgleJHpWtMCzAebt7Eo231oduv73u8I4mJflK0clTfI</string>
+</dict>
+</plist>

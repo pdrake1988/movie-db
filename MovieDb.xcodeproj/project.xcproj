@@ -1,7 +1,7 @@
 {
   "default-configuration": "Debug",
   "configurations": [
-    "Debug",
+    { "name": "Debug", "file": { "anchor": "Configuration", "relative-path": "Development.xcconfig" } },
     "Release",
   ],
   "localizations": {
@@ -11,6 +11,45 @@
     ],
   },
   "files": [
+    {
+      "kind": "folder",
+      "path": "PLIST",
+      "target-membership": [
+        "MovieDb",
+      ],
+      "membership-exceptions": [
+        {
+          "target": "MovieDbTests",
+          "inclusions": [
+            "Development.plist",
+          ],
+        }, {
+          "target": "MovieDbUITests",
+          "inclusions": [
+            "Development.plist",
+          ],
+        },
+      ],
+    }, {
+      "kind": "folder",
+      "path": "Configuration",
+      "target-membership": [
+        "MovieDb",
+      ],
+      "membership-exceptions": [
+        {
+          "target": "MovieDbTests",
+          "inclusions": [
+            "Development.xcconfig",
+          ],
+        }, {
+          "target": "MovieDbUITests",
+          "inclusions": [
+            "Development.xcconfig",
+          ],
+        },
+      ],
+    },
     { "kind": "folder", "path": "MovieDb", "target-membership": [ "MovieDb" ] },
     { "kind": "folder", "path": "MovieDbTests", "target-membership": [ "MovieDbTests" ] },
     { "kind": "folder", "path": "MovieDbUITests", "target-membership": [ "MovieDbUITests" ] },
@@ -30,6 +69,9 @@
       "id": "9C489C7D30A69E2F006E9E34",
       "product": "Products/MovieDb.app",
       "product-type": "application",
+      "specialized-configurations": [
+        { "name": "Debug", "file": { "anchor": "Configuration", "relative-path": "Development.xcconfig" } },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -72,6 +114,9 @@
       "product": "Products/MovieDbTests.xctest",
       "product-type": "bundle.unit-test",
       "test-host-target": "MovieDb",
+      "specialized-configurations": [
+        { "name": "Debug", "file": { "anchor": "Configuration", "relative-path": "Development.xcconfig" } },
+      ],
       "dependencies": [
         "MovieDb",
       ],
@@ -104,6 +149,9 @@
       "product": "Products/MovieDbUITests.xctest",
       "product-type": "bundle.ui-testing",
       "test-host-target": "MovieDb",
+      "specialized-configurations": [
+        { "name": "Debug", "file": { "anchor": "Configuration", "relative-path": "Development.xcconfig" } },
+      ],
       "dependencies": [
         "MovieDb",
       ],
